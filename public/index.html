@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Niko Kovacevic</title>
+    <link rel="stylesheet" href="/css/stark.css">
+  </head>
+  <body>
+    <header style="position: fixed; width: 100%; background: transparent;">
+      <nav>
+        <div style="display: flex; flex-flow: row;">
+          <div>
+            <button id="dropdown-button" data-menu-id="dropdown-menu" type="button" name="button">&#9776;</button>
+          </div>
+          <ul id="dropdown-menu" class="left">
+              <li><a href="/">Niko</a></li>
+              <li class="dropdown-li hidden"><a href="//til.nikovacevic.io/">TIL</a></li>
+              <!-- TODO <li class="dropdown-li hidden"><a href="//run.nikovacevic.io/">RUN</a></li> -->
+          </ul>
+        </div>
+        <ul class="right">
+            <li><a href="https://github.com/nikovacevic">GitHub</a></li>
+            <li><a href="https://stackoverflow.com/users/4320971/niko-kovacevic">StackOverflow</a></li>
+            <li><a href="https://strava.com/athletes/6476954">Strava</a></li>
+            <li><a href="https://twitter.com/NikoKovacevic">Twitter</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="atf" style="height: 100vh; display: flex; flex-flow: column; justify-content: flex-end; align-items: center; background-color: #5b5b5b; background-image: url('/images/01.jpg'); background-repeat: no-repeat; background-position: top; background-size: cover; background-origin: border-box; background-attachment: fixed; box-shadow: 0 0 4px #696868;">
+      <div style="display: flex; flex-flow: column; justify-content: center; align-items: center;">
+        <h1>NIKO KOVACEVIC</h1>
+      </div>
+    </section>
+    <main>
+      <div class="container">
+        <div class="tile-container">
+          <a href="//til.nikovacevic.io/" class="tile">
+            <h2>TIL</h2>
+            <p>Investiage every curiosity</p>
+          </a>
+          <a href="https://strava.com/athletes/6476954" class="tile">
+            <h2>RUN</h2>
+            <p>Explore every trail</p>
+          </a>
+          <a href="https://github.com/nikovacevic" class="tile">
+            <h2>DEV</h2>
+            <p>Test every package</p>
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer style="padding-top: 20px;">
+      <p>Copyright © 2017 Niko Kovacevic<br>The MIT License<br>Go ahead, it's free!</p>
+    </footer>
+    <script type="text/javascript" src="/js/ui.js"></script>
+  </body>
+</html>
