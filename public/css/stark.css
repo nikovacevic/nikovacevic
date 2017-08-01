@@ -164,7 +164,7 @@ section#atf .atf-content {
   align-items: center;
   width: 100%;
   background: rgba(0,0,0,0.4);
-  padding-bottom: 8px;
+  padding: 8px 0;
 }
 
 section#atf .atf-content p.cover {
