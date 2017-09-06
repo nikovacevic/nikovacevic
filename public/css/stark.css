@@ -119,10 +119,10 @@ header nav ul li a {
   padding: 16px 16px 12px 16px;
   border: none;
   transition: all 0.2s;
-  color: #EEE;
+  color: #333;
 }
 header nav ul li a:visited {
-  color: #EEE;
+  color: #333;
 }
 header nav ul li a:hover {
   text-decoration: none;
@@ -134,7 +134,7 @@ header nav button#dropdown-button {
   border: none;
   background: none;
   font-size: 1.2em;
-  color: #EEE;
+  color: #333;
   border-radius: 0px;
   cursor: pointer;
   padding: 9px 12px;
@@ -148,7 +148,7 @@ section#atf {
   justify-content: flex-end;
   align-items: center;
   background-color: #5b5b5b;
-  background-image: url('/images/01.jpg');
+  background-image: url('/images/background.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
