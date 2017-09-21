@@ -217,10 +217,8 @@ footer {
 
 header nav button#nav-button {
   display: none;
-}
-header nav button#nav-button span.menu-icon {}
-header nav button#nav-button span.close-icon {
-  font-size: 1.4em;
+  padding: 0 10px;
+  margin: 0;
 }
 header nav#header-nav {
   background: rgba(0,0,0,0.0);
@@ -238,7 +236,9 @@ header nav#header-nav.secondary button#nav-button {
   transition: all 0.2s;
 }
 
-ul#secondary-nav {}
+ul#secondary-nav {
+  margin-left: 8px;
+}
 ul#secondary-nav li {
   display: inline-block;
 }
@@ -284,7 +284,7 @@ div.arrow.down {
   }
   header nav ul#secondary-nav li a {
     font-size: 0.75em;
-    padding: 16px 4px;
+    padding: 18px 4px 14px 4px;
     line-height: 2em;
   }
 }
