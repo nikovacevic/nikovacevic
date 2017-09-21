@@ -84,6 +84,12 @@ li img {
 .hidden {
   display: none !important;
 }
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 
 header {
   display: flex;
@@ -113,9 +119,10 @@ header nav ul li {
   text-transform: uppercase;
   letter-spacing: 0.8px;
   font-size: 0.9em;
+  margin: 0;
 }
 header nav ul.left li {
-  display: block;
+  display: inline-block;
   text-transform: uppercase;
   letter-spacing: 0.8px;
   font-size: 0.9em;
@@ -135,7 +142,7 @@ header nav ul li a:hover {
   background: rgba(0,0,0,0.25);
   color: #FFF;
 }
-header nav button#dropdown-button {
+header nav button#nav-button {
   display: block;
   border: none;
   background: none;
@@ -208,19 +215,47 @@ footer {
   padding-top: 20px;
 }
 
+header nav button#nav-button {
+  display: none;
+}
+header nav button#nav-button span.menu-icon {}
+header nav button#nav-button span.close-icon {
+  font-size: 1.4em;
+}
+header nav#header-nav {
+  background: rgba(0,0,0,0.0);
+  border-bottom: 1px solid rgba(0,0,0,0.0);
+  transition: all 0.2s;
+}
+header nav#header-nav.secondary {
+  background: rgba(0,0,0,0.25);
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+  transition: all 0.2s;
+}
+header nav#header-nav.secondary li a,
+header nav#header-nav.secondary button#nav-button {
+  color: #FFF;
+  transition: all 0.2s;
+}
+
+ul#secondary-nav {}
+ul#secondary-nav li {
+  display: inline-block;
+}
+
 div.arrow {
-    width: 0;
-    height: 0;
+  width: 0;
+  height: 0;
 }
 div.arrow.white {
-    border-color: #EEE;
-    color: #EEE;
+  border-color: #EEE;
+  color: #EEE;
 }
 div.arrow.down {
-    margin: 0 auto;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid;
+  margin: 0 auto;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid;
 }
 
 .flex {
@@ -234,24 +269,22 @@ div.arrow.down {
 }
 
 @media screen and (max-width: 750px) {
-  header nav {
-    display: block;
+  .hidden-sm {
+    display: none !important;
   }
-  header nav ul {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
+  .right-sm {
+    float: right !important;
   }
-  header nav ul.left li {
-    font-size: 1.05rem;
+  .left-sm {
+    float: left !important;
   }
-  header nav ul.right li {
-    font-size: 0.6rem;
+  header nav button#nav-button {
+    float: left;
+    display: inline-block;
   }
-  header nav ul.right li a {
-    padding: 6px 8px;
-  }
-  header nav button#dropdown-button {
-    margin-top: 5px;
+  header nav ul#secondary-nav li a {
+    font-size: 0.75em;
+    padding: 16px 4px;
+    line-height: 2em;
   }
 }
