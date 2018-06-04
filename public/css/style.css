@@ -29,10 +29,12 @@ p.centered-statement {
 
 a,a:visited {
   text-decoration: none;
-  color: #2996D1;
+  /* color: #2996D1; */
+  color: #303030;
 }
 a:hover,a:active {
-  color: #1F719E;
+  /* color: #1F719E; */
+  color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -186,7 +188,6 @@ nav#full-screen-nav ul {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 60px;
   padding: 0;
 }
 nav#full-screen-nav ul li {
